@@ -10,18 +10,17 @@
   prefersdark: false;
   color-scheme: light;
 
-  /* Luxurious Travel Palette */
-  --color-primary: #0284c7;      /* Sky/Ocean Blue - evokes travel/freedom */
-  --color-secondary: #0f172a;    /* Deep Navy - adds the "fancy" premium feel */
-  --color-accent: #f59e0b;       /* slightly deeper amber */
-  --color-neutral: #1e293b;
-  --color-base-100: #ffffff;     /* Crisp white */
-  --color-base-200: #f1f5f9;     /* Soft slate for section backgrounds */
-  --color-base-300: #cbd5e1;
+  --color-primary: #0284c7;
+  --color-secondary: #0f172a;
+  --color-accent: #f59e0b;
 
-  /* UI Refinements */
-  --rounded-box: 1.5rem;         /* Slightly more rounded for a plush look */
-  --rounded-btn: 2rem;           /* Pill-shaped buttons feel more "lifestyle" */
+  --color-base-100: #ffffff;
+  --color-base-200: #f1f5f9;
+  --color-base-300: #cbd5e1;
+  --color-base-content: #0f172a; /* TEXT COLOR FIX */
+
+  --rounded-box: 1.5rem;
+  --rounded-btn: 2rem;
   --rounded-badge: 1.5rem;
 }
 
@@ -30,13 +29,14 @@
   prefersdark: true;
   color-scheme: dark;
 
-  --color-primary: #38bdf8;      /* Brighter blue for dark mode */
+  --color-primary: #38bdf8;
   --color-secondary: #f8fafc;
   --color-accent: #fbbf24;
-  --color-neutral: #f8fafc;
-  --color-base-100: #020617;     /* Midnight sky background */
+
+  --color-base-100: #020617;
   --color-base-200: #0f172a;
   --color-base-300: #1e293b;
+  --color-base-content: #f8fafc; /* TEXT COLOR FIX */
 
   --rounded-box: 1.5rem;
   --rounded-btn: 2rem;

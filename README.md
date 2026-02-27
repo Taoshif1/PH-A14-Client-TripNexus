@@ -1,5 +1,7 @@
 # TripNexus
 
+
+
 ```
 client
 ├─ eslint.config.js
@@ -10,12 +12,25 @@ client
 │  └─ vite.svg
 ├─ README.md
 ├─ src
-│  ├─ App.css
-│  ├─ App.jsx
 │  ├─ assets
 │  │  └─ react.svg
+│  ├─ components
+│  │  ├─ Blog.jsx
+│  │  ├─ Explore.jsx
+│  │  ├─ Footer.jsx
+│  │  └─ Navbar.jsx
 │  ├─ index.css
-│  └─ main.jsx
+│  ├─ layouts
+│  │  └─ MainLayout.jsx
+│  ├─ main.jsx
+│  ├─ pages
+│  │  ├─ About.jsx
+│  │  ├─ Contact.jsx
+│  │  ├─ Home.jsx
+│  │  ├─ Login.jsx
+│  │  └─ Register.jsx
+│  └─ router
+│     └─ router.jsx
 └─ vite.config.js
 
 ```
