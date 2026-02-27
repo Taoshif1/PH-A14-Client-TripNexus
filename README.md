@@ -2,6 +2,7 @@
 
 
 
+
 ```
 client
 ├─ eslint.config.js
@@ -9,6 +10,7 @@ client
 ├─ package-lock.json
 ├─ package.json
 ├─ public
+│  ├─ hotels.json
 │  └─ vite.svg
 ├─ README.md
 ├─ src
@@ -18,6 +20,8 @@ client
 │  │  ├─ Blog.jsx
 │  │  ├─ Explore.jsx
 │  │  ├─ Footer.jsx
+│  │  ├─ Hero.jsx
+│  │  ├─ HotelCard.jsx
 │  │  └─ Navbar.jsx
 │  ├─ index.css
 │  ├─ layouts
