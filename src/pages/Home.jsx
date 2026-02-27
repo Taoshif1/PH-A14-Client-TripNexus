@@ -1,9 +1,13 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigation } from "react-router-dom";
 import Hero from "../components/Hero";
 import HotelCard from "../components/HotelCard";
+import HotelCardSkeleton from "../components/HotelCardSkeleton";
 
 const Home = () => {
   const hotels = useLoaderData();
+  const navigation = useNavigation();
+
+  const isLoading = navigation.state === "loading";
 
   return (
     <>
@@ -15,9 +19,13 @@ const Home = () => {
         </h2>
 
         <div className="grid md:grid-cols-4 gap-6">
-          {hotels.map((hotel) => (
-            <HotelCard key={hotel.id} hotel={hotel} />
-          ))}
+          {isLoading
+            ? Array.from({ length: 4 }).map((_, i) => (
+                <HotelCardSkeleton key={i} />
+              ))
+            : hotels.map((hotel) => (
+                <HotelCard key={hotel.id} hotel={hotel} />
+              ))}
         </div>
       </section>
     </>

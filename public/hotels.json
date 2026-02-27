@@ -35,5 +35,77 @@
     "gallery": [
       "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=2070"
     ]
+  },
+  {
+    "id": "burj-al-arab",
+    "name": "Burj Al Arab",
+    "location": "Dubai, UAE",
+    "price": 1500,
+    "discountPrice": 1350,
+    "rating": 4.9,
+    "reviewsCount": 2145,
+    "type": "7-Star Hotel",
+    "maxGuests": 5,
+    "roomsAvailable": 6,
+    "amenities": ["Private Beach", "Butler Service", "Helipad", "Infinity Pool"],
+    "description": "Iconic sail-shaped luxury hotel offering unmatched Arabian hospitality.",
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070",
+    "gallery": [
+      "https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=2070"
+    ]
+  },
+  {
+    "id": "ritz-paris",
+    "name": "Ritz Paris",
+    "location": "Paris, France",
+    "price": 980,
+    "discountPrice": 860,
+    "rating": 4.7,
+    "reviewsCount": 1670,
+    "type": "Historic Palace",
+    "maxGuests": 3,
+    "roomsAvailable": 10,
+    "amenities": ["Spa", "Michelin Dining", "Historic Suites", "Bar Hemingway"],
+    "description": "Legendary Parisian palace blending timeless elegance with modern luxury.",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070",
+    "gallery": [
+      "https://images.unsplash.com/photo-1564501049412-61c2a3083791?q=80&w=2070"
+    ]
+  },
+  {
+    "id": "four-seasons-bora",
+    "name": "Four Seasons Bora Bora",
+    "location": "Bora Bora, French Polynesia",
+    "price": 1300,
+    "discountPrice": 1180,
+    "rating": 4.9,
+    "reviewsCount": 1421,
+    "type": "Overwater Resort",
+    "maxGuests": 4,
+    "roomsAvailable": 5,
+    "amenities": ["Overwater Bungalows", "Lagoon Access", "Private Deck", "Snorkeling"],
+    "description": "Crystal-clear lagoon villas offering ultimate tropical escape.",
+    "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=2070",
+    "gallery": [
+      "https://images.unsplash.com/photo-1501117716987-c8e1ecb21091?q=80&w=2070"
+    ]
+  },
+  {
+    "id": "waldorf-maldives",
+    "name": "Waldorf Astoria Maldives",
+    "location": "Maldives",
+    "price": 1400,
+    "discountPrice": 1250,
+    "rating": 4.8,
+    "reviewsCount": 1103,
+    "type": "Island Resort",
+    "maxGuests": 4,
+    "roomsAvailable": 7,
+    "amenities": ["Private Island", "Infinity Pool", "Luxury Spa", "Water Sports"],
+    "description": "Secluded island paradise with pristine beaches and overwater villas.",
+    "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=2070",
+    "gallery": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2070"
+    ]
   }
 ]

@@ -8,12 +8,13 @@ import Contact from "../pages/Contact";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import HotelDetails from "../pages/HotelDetails";
+import HotelNotFound from "../components/HotelNotFound";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
-    // errorElement: <ErrorPage />,
+    errorElement: <HotelNotFound></HotelNotFound>,
     children: [
       {
         index: true,
@@ -49,11 +50,18 @@ const router = createBrowserRouter([
       },
       {
         path: "hotel/:id",
-        element: <HotelDetails></HotelDetails>,
+        element: <HotelDetails />,
         loader: async ({ params }) => {
           const res = await fetch("/hotels.json");
           const hotels = await res.json();
-          return hotels.find((hotel) => hotel.id === params.id);
+
+          const hotel = hotels.find((hotel) => hotel.id === params.id);
+
+          if (!hotel) {
+            throw new Response("Hotel Not Found", { status: 404 });
+          }
+
+          return hotel;
         },
       },
     ],

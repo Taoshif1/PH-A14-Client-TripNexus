@@ -3,6 +3,7 @@
 
 
 
+
 ```
 client
 ├─ eslint.config.js
@@ -20,8 +21,11 @@ client
 │  │  ├─ Blog.jsx
 │  │  ├─ Explore.jsx
 │  │  ├─ Footer.jsx
+│  │  ├─ GlobalLoader.jsx
 │  │  ├─ Hero.jsx
 │  │  ├─ HotelCard.jsx
+│  │  ├─ HotelCardSkeleton.jsx
+│  │  ├─ HotelNotFound.jsx
 │  │  └─ Navbar.jsx
 │  ├─ index.css
 │  ├─ layouts
@@ -31,6 +35,7 @@ client
 │  │  ├─ About.jsx
 │  │  ├─ Contact.jsx
 │  │  ├─ Home.jsx
+│  │  ├─ HotelDetails.jsx
 │  │  ├─ Login.jsx
 │  │  └─ Register.jsx
 │  └─ router

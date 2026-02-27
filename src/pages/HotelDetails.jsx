@@ -36,7 +36,7 @@ const HotelDetails = () => {
 
       {/* Gallery */}
       <div className="grid md:grid-cols-3 gap-4">
-        {gallery.map((img, i) => (
+        {gallery?.map((img, i) => (
           <img
             key={i}
             src={img}
@@ -56,7 +56,7 @@ const HotelDetails = () => {
       <div>
         <h2 className="text-2xl font-bold mb-4">Amenities</h2>
         <div className="flex flex-wrap gap-3">
-          {amenities.map((item, i) => (
+          {amenities?.map((item, i) => (
             <span key={i} className="badge badge-outline">
               {item}
             </span>
