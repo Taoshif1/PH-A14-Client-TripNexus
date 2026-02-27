@@ -7,11 +7,13 @@ import {
   getRedirectResult,
 } from "firebase/auth";
 import { auth } from "../firebase/firebase.config";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
+const from = location.state?.from?.pathname || "/dashboard";
 
 const Login = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const {
     register,
@@ -31,7 +33,7 @@ const Login = () => {
   const onSubmit = async (data) => {
     try {
       await signInWithEmailAndPassword(auth, data.email, data.password);
-      navigate("/");
+      navigate(from, { replace: true });
     } catch (err) {
       alert("Invalid credentials");
     }

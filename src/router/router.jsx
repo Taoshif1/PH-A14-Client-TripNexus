@@ -10,7 +10,7 @@ import Register from "../pages/Register";
 import HotelDetails from "../pages/HotelDetails";
 import HotelNotFound from "../components/HotelNotFound";
 import PrivateRoute from "../router/PrivateRoute";
-import DashboardLayout from "../dashboard/layouts/DashbaordLayout";
+import DashboardLayout from "../dashboard/layouts/DashboardLayout";
 import DashboardHome from "../dashboard/pages/DashboardHome";
 
 const router = createBrowserRouter([
