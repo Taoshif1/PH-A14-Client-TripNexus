@@ -13,11 +13,12 @@
   --color-primary: #0284c7;
   --color-secondary: #0f172a;
   --color-accent: #f59e0b;
+  --color-neutral: #0f172a;  /* Added for text contrast */
 
   --color-base-100: #ffffff;
   --color-base-200: #f1f5f9;
   --color-base-300: #cbd5e1;
-  --color-base-content: #0f172a; /* TEXT COLOR FIX */
+  --color-base-content: #0f172a;  /* TEXT COLOR FIX */
 
   --rounded-box: 1.5rem;
   --rounded-btn: 2rem;
@@ -32,11 +33,12 @@
   --color-primary: #38bdf8;
   --color-secondary: #f8fafc;
   --color-accent: #fbbf24;
+    --color-neutral: #f8fafc; /* Added for text contrast */
 
   --color-base-100: #020617;
   --color-base-200: #0f172a;
   --color-base-300: #1e293b;
-  --color-base-content: #f8fafc; /* TEXT COLOR FIX */
+  --color-base-content: #f8fafc;    /* TEXT COLOR FIX */
 
   --rounded-box: 1.5rem;
   --rounded-btn: 2rem;

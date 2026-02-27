@@ -2,8 +2,6 @@
 
 
 
-
-
 ```
 client
 ├─ eslint.config.js
@@ -27,6 +25,13 @@ client
 │  │  ├─ HotelCardSkeleton.jsx
 │  │  ├─ HotelNotFound.jsx
 │  │  └─ Navbar.jsx
+│  ├─ context
+│  │  └─ AuthProvider.jsx
+│  ├─ firebase
+│  │  ├─ firebase.config.js
+│  │  └─ firebase.utils.js
+│  ├─ hooks
+│  │  └─ useAuth.js
 │  ├─ index.css
 │  ├─ layouts
 │  │  └─ MainLayout.jsx
@@ -39,6 +44,7 @@ client
 │  │  ├─ Login.jsx
 │  │  └─ Register.jsx
 │  └─ router
+│     ├─ PrivateRoute.jsx
 │     └─ router.jsx
 └─ vite.config.js
 
