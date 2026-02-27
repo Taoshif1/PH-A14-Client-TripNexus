@@ -9,6 +9,9 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import HotelDetails from "../pages/HotelDetails";
 import HotelNotFound from "../components/HotelNotFound";
+import PrivateRoute from "../router/PrivateRoute";
+import DashboardLayout from "../dashboard/layouts/DashbaordLayout";
+import DashboardHome from "../dashboard/pages/DashboardHome";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +66,20 @@ const router = createBrowserRouter([
 
           return hotel;
         },
+      },
+    ],
+  },
+  {
+    path: "dashboard",
+    element: (
+      <PrivateRoute>
+        <DashboardLayout />
+      </PrivateRoute>
+    ),
+    children: [
+      {
+        index: true,
+        element: <DashboardHome />,
       },
     ],
   },
